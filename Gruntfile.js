@@ -1,21 +1,18 @@
 module.exports = function(grunt) {
   grunt.initConfig({
-    htmlhint: {
-      html: {
-        options: {
-                    htmlhintrc: '.htmlhintrc'
-            
-        },
-          src: ['*.html']
+    eslint: {
+      options: {
+                configFile: '.eslintrc.json'
           
-      }
-                
+      },
+        target: ['rectangle.js']
+        
     }
-                
+              
   });
 
-    grunt.loadNpmTasks('grunt-htmlhint');
+    grunt.loadNpmTasks('grunt-eslint');
 
-      grunt.registerTask('default', ['htmlhint']);
+      grunt.registerTask('default', ['eslint']);
 
 };
