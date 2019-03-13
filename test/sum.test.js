@@ -9,10 +9,11 @@ describe('加法测试',function(){
   it('1 + 0 = 1',function(){
     expect(add(1, 0)).to.be.equal(1);
   });
-
+  /*
   it('"1" + "0" = "1"',function(){
     expect(add("1","0")).to.be.equal(1);
   });
+  */
 
   it('20 + 5 = 25',function(){
     expect(add(20,5)).to.be.equal(25);
